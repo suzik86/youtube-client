@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.wrapper ul {
+  list-style: none;
+  background-color: lightgray;
+  position: relative;
+  transition: left 0.3s;
+  cursor: default;
+}
+
+.wrapper.active ul {
+  transition: none;
+	cursor: grabbing;
+}
+
+.wrapper ul li {
+  width: 360px;
+  overflow: hidden;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.wrapper ul li > div {
+  padding: 10px;
+  height: 550px;
+  background-color: white;
+}
+
+.title {
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  top: 70px;
+  z-index: 2;
+  background-color: rgb(88, 189, 88);
+  width: 100%;
+  margin-left: -5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.author {
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.preview {
+  width: 100%;
+}
+
+.description {
+  height: 30%;
+  overflow: hidden;
+}
+
+.view-count {
+  text-align: center;
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.button-block {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.button {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  border-radius: 100%;
+  margin: 10px;
+  background-color: gray;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.prev {
+  display: none;
+}
+
+.current {
+  background-color: rgb(88, 189, 88);
+  color: white;
+}
+
+.active {
+  cursor: grabbing;
+}
